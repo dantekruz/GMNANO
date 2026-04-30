@@ -6,17 +6,17 @@ import Image from "next/image";
 const partnerships = [
   {
     title: "Strategic Partnership with a CDMO in USA",
-    desc: "SGN entered a ~$6.5MM Strategic Development Partnership for three of its pipeline products with a US-based CDMO.",
+    desc: "SGN entered a ~$6.5MM Strategic Development Partnership for three of its pipeline products with a US-based CDMO in Q2 2023. The CDMO partner is accepting equity for all CMC development including material & packaging costs and will acquire commercial manufacturing rights to the three SGN products. In addition, the CDMO partner will infuse $2.7MM in cash as an equity investment in SGN Nanopharma over the next year.",
     points: [
-      "CDMO will generate CMC packages for Phase-3 IND filings",
-      "CDMO will supply all clinical trial materials",
+      "CDMO will generate CMC packages for Phase-3 IND filings for 3 pipeline products.",
+      "CDMO will supply all clinical trial materials for the three products.",
     ],
     icon: "/icons/partnership1.svg",
     tag: "Development",
   },
   {
     title: "Academic Partnerships",
-    desc: "SGN Nanopharma has multiple funded research programs...",
+    desc: "SGN Nanopharma has three actively funded research programs — \"Micellar Nanoparticle Nanoformulations for the Treatment of Traumatic Brain Injury\", \"Nanoformulations of Cannabinoids for Nose-to-Brain Delivery\", and \"Nanoformulations of Cannabinoids and Other Drugs\" — from the State of Florida (Florida I4 HiTech Corridor Grants), receiving over $1 million in matching R&D funding administered through the University of South Florida. Over six-plus years, SGN's collaboration with the Florida HiTech Corridor and USF has thrived, with more than 65 USF Master's students conducting thesis research and internships at SGN labs under Dr. Pranav Patel's mentorship, and SGN hiring over two dozen USF graduates over that span.",
     link: "Learn more about our research collaborations",
     linkUrl:
       "https://floridahightech.com/insights/matching-graduate-students-with-area-employers-through-hands-on-experience/",
@@ -24,8 +24,8 @@ const partnerships = [
     tag: "Research",
   },
   {
-    title: "Supply & Licensing Deals",
-    desc: "Strategic distribution and commercialization partnerships across India, SEA, and MENA regions.",
+    title: "Supply & Licensing Deals with Partners in India, Middle East & North Africa and South East Asia",
+    desc: "Medicom Healthcare is a fast-growing company in the Global Ophthalmic Market with a mission to provide high-quality eyecare products designed to protect the cornea by eliminating preservatives and other cytotoxic additives. Medicom is our semi-exclusive partner for preservative-free MNP Cyclosporine in the Indian market. Wellesta Healthcare Singapore Pte. Ltd, a subsidiary of Wellesta Holdings Pte Ltd, is set up to support companies in the Healthcare sector to provide commercial support and market access in India, SEA and MENA through a footprint of their partners and subsidiaries. Wellesta is our partner for MNP Cyclosporine in India, SEA and MENA. In addition, they are the exclusive distribution partner for SGN's hair growth range of products in India.",
     icon: "/icons/partnership3.svg",
     tag: "Commercial",
   },
@@ -58,10 +58,10 @@ export default function PartnershipsList() {
         </div>
 
         {/* ── Cards Grid ───────────────────────────────────────────────── */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {partnerships.map((item, i) => (
             <FadeIn key={i} delay={i * 0.1}>
-              <div className="group relative flex flex-col h-full bg-white rounded-3xl shadow-lg ring-1 ring-[#1a4a7a]/8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+              <div className="group relative flex flex-col bg-white rounded-3xl shadow-lg ring-1 ring-[#1a4a7a]/8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
                 {/* Top accent bar */}
                 <div className="h-1 w-full bg-linear-to-r from-[#1a4a7a] to-amber-400" />
 
@@ -85,13 +85,13 @@ export default function PartnershipsList() {
                   <div className="w-10 h-0.5 rounded-full bg-amber-400 mb-5" />
 
                   {/* Description */}
-                  <p className="text-base font-medium text-[#324a6d]/70 leading-relaxed flex-1">
+                  <p className="text-base font-medium text-[#324a6d]/70 leading-relaxed">
                     {item.desc}
                   </p>
 
                   {/* Bullet points */}
                   {item.points && (
-                    <ul className="mt-6 space-y-3">
+                    <ul className="mt-3 space-y-3">
                       {item.points.map((p, idx) => (
                         <li
                           key={idx}

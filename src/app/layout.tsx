@@ -24,7 +24,7 @@ export const metadata = {
     title: "GM Nanotherapeutics",
     description:
       "Delivering clinically superior and cost-effective nanotherapeutics through advanced nanotechnology platforms.",
-    url: "https://gmnanotherapeutics.com",
+    url: "https://gmnano-eta.vercel.app/",
     siteName: "GM Nanotherapeutics",
     images: [
       {
