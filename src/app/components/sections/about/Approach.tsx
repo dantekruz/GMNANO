@@ -9,8 +9,8 @@ const items = [
   {
     number: "01",
     label: "Challenge",
-    title: "Inadequacy of the Current Paradigm",
-    desc: "We believe the algorithm that monotherapies can effectively cure or manage chronic diseases — which are caused by multiple biochemical defects — is simplistic and outdated.",
+    title: 'The "Single-Target" Glass Ceiling',
+    desc: "Despite billions in R&D, Phase 3 pain trials consistently show a narrow drug-placebo efficacy gap of less than 10%. Specific inhibitors — such as NaV1.8 sodium channel blockers — often fail in complex indications like Lumbar Spondylosis because they target only one node in a massive biological network. Monotherapies simply cannot address the multifactorial etiologies that drive chronic pain and inflammatory disease.",
     icon: "/icons/arrow.svg",
     // Amber
     accentBar: "bg-amber-500",
@@ -26,9 +26,9 @@ const items = [
   },
   {
     number: "02",
-    label: "Strategy",
-    title: "Our Strategy",
-    desc: "Attacking chronic diseases with a combination of two or more effective drugs targeting multiple underlying biochemical causes simultaneously in one formulation will generate more impactful medicines.",
+    label: "Breakthrough",
+    title: "The SGNP™ Platform",
+    desc: "GM Nano is shifting the paradigm from single-target molecules to Multi-Target Nanotherapeutics. Our proprietary SGNP™ platform is a sophisticated engineering engine capable of integrating two or more drugs into a single, stable, and synergistic nanoformulation — overcoming solubility and physicochemical constraints that defeat conventional delivery systems.",
     icon: "/icons/arrow.svg",
     // Blue
     accentBar: "bg-blue-600",
@@ -45,8 +45,8 @@ const items = [
   {
     number: "03",
     label: "Approach",
-    title: "Our Approach",
-    desc: "We harness our proprietary nanotechnology in a capital-efficient manner to create a novel pipeline of superior, clinically differentiated small-molecule combination nanomedicines.",
+    title: "Validated Pipeline & Clinical Roadmap",
+    desc: "We have successfully nanoformulated 30+ conventionally approved drugs and engineered over 10 Fixed-Dose Combination Nanotherapeutics (FDC-NTs). We are advancing FDC-NTs into Phase 2 for Acute Post-Operative Pain and Diabetic Neuropathy in 2026, with Phase 3 chronic pain and Phase 2 Rheumatoid Arthritis studies slated for 2027.",
     icon: "/icons/check.svg",
     // Emerald
     accentBar: "bg-emerald-500",
@@ -65,14 +65,25 @@ const items = [
 // ─── CONNECTOR ────────────────────────────────────────────────────────────────
 
 const connectorColors = [
-  { line: "bg-gradient-to-b from-amber-300 to-blue-300", dot: "border-blue-400 bg-blue-100" },
-  { line: "bg-gradient-to-b from-blue-300 to-emerald-300", dot: "border-emerald-400 bg-emerald-100" },
+  {
+    line: "bg-gradient-to-b from-amber-300 to-blue-300",
+    dot: "border-blue-400 bg-blue-100",
+  },
+  {
+    line: "bg-gradient-to-b from-blue-300 to-emerald-300",
+    dot: "border-emerald-400 bg-emerald-100",
+  },
 ];
 
 const Connector = ({ index }: { index: number }) => (
-  <div className="flex flex-col items-center my-1 select-none" aria-hidden="true">
+  <div
+    className="flex flex-col items-center my-1 select-none"
+    aria-hidden="true"
+  >
     <div className={`w-px h-8 ${connectorColors[index].line}`} />
-    <div className={`w-2 h-2 rounded-full border-2 mt-0.5 ${connectorColors[index].dot}`} />
+    <div
+      className={`w-2 h-2 rounded-full border-2 mt-0.5 ${connectorColors[index].dot}`}
+    />
   </div>
 );
 
@@ -81,22 +92,21 @@ const Connector = ({ index }: { index: number }) => (
 export default function Approach() {
   return (
     <section className="relative py-32 overflow-hidden bg-linear-to-b from-white to-slate-50">
-
       {/* Dot grid texture */}
       <div
         className="pointer-events-none absolute inset-0 opacity-30"
         style={{
-          backgroundImage: "radial-gradient(circle, #cbd5e1 1px, transparent 1px)",
+          backgroundImage:
+            "radial-gradient(circle, #cbd5e1 1px, transparent 1px)",
           backgroundSize: "28px 28px",
         }}
       />
 
       <div className="relative max-w-5xl mx-auto px-6">
-
         {/* TOP ICON */}
         <FadeIn>
           <div className="flex justify-center mb-10">
-            <div className="flex items-center justify-center ">
+            <div className="flex items-center justify-center">
               <Image
                 src="/icons/bulleye.svg"
                 alt="approach"
@@ -114,10 +124,14 @@ export default function Approach() {
               Our cutting edge approach
             </p>
             <h2 className="text-3xl md:text-4xl font-black text-slate-800 leading-tight">
-              Creating Best-in-Class,{" "}
-              <span className="text-amber-500">Fixed-Dose</span>{" "}
-              Combination Nanomedicines
+              Breaking the <span className="text-amber-500">Single-Target</span>{" "}
+              Glass Ceiling
             </h2>
+            <p className="mt-4 text-base text-slate-500 leading-relaxed">
+              Disrupting pain and inflammation markets with{" "}
+              <span className="font-semibold text-slate-700">SGNP™</span>{" "}
+              Multi-Target Nanotherapeutics
+            </p>
             {/* Decorative rule */}
             <div className="flex items-center justify-center gap-3 mt-6">
               <div className="h-px w-12 bg-amber-200" />
@@ -140,7 +154,9 @@ export default function Approach() {
                   `}
                 >
                   {/* Left accent bar */}
-                  <div className={`absolute left-0 top-6 bottom-6 w-0.75 rounded-full ${item.accentBar}`} />
+                  <div
+                    className={`absolute left-0 top-6 bottom-6 w-0.75 rounded-full ${item.accentBar}`}
+                  />
 
                   {/* Icon */}
                   <div
@@ -169,11 +185,15 @@ export default function Approach() {
                     <h3 className="text-xl font-semibold text-slate-800 leading-snug mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-sm text-slate-500 leading-relaxed">{item.desc}</p>
+                    <p className="text-sm text-slate-500 leading-relaxed">
+                      {item.desc}
+                    </p>
                   </div>
 
                   {/* Ghost step number */}
-                  <div className={`hidden md:block shrink-0 text-6xl font-light leading-none select-none self-center pr-2 ${item.numberText}`}>
+                  <div
+                    className={`hidden md:block shrink-0 text-6xl font-light leading-none select-none self-center pr-2 ${item.numberText}`}
+                  >
                     {item.number}
                   </div>
                 </div>
@@ -184,7 +204,6 @@ export default function Approach() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

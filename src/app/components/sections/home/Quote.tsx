@@ -13,8 +13,7 @@ export default function Quote() {
                    height={60}
                     className="mx-auto mb-6"
                  />
-        <p className="italic text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-          “We firmly believe in the superior power of combination therapeutics to effectively treat complex, chronic diseases with multi-factorial etiologies. When combined with cutting-edge nanotechnologies, the potency, safety, and bioavailability are further enhanced.”
+        <p className="italic text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">“We firmly believe in the superior power of combination therapeutics to effectively treat complex, chronic diseases with multi-factorial etiologies. When combined with cutting-edge nanotechnologies, the potency, safety, and bioavailability of combination therapeutics are further enhanced. Our commitment is to safely deliver novel, more potent yet safer, combination nano-therapies as an alternative to many traditional medicines such as opiates, which are currently considered over-prescribed and potentially life-threatening.”
         </p>
       </FadeIn>
 

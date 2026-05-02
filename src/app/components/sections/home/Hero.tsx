@@ -25,7 +25,7 @@ export default function Hero() {
       <div className="relative z-10 w-full max-w-4xl mx-auto px-5 sm:px-8 py-20 sm:py-24">
 
         <FadeIn>
-          <h2 className="text-sm sm:text-base md:text-lg font-bold tracking-[0.25em] sm:tracking-widest text-orange-400 uppercase">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-[0.25em] sm:tracking-widest text-orange-400 uppercase">
             Welcome to
           </h2>
         </FadeIn>
@@ -38,7 +38,8 @@ export default function Hero() {
 
         <FadeIn delay={0.4}>
           <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg text-white/80 font-medium max-w-2xl mx-auto leading-relaxed px-2 sm:px-0">
-            Creating impactful, clinically differentiated medicines through advanced nanotechnology platforms.
+          Advancing multi-target nanotherapeutics for superior patient outcomes.<br /> 
+          We develop clinically superior and cost-effective nanotherapeutics by integrating multiple drugs into a single optimized nanoformulation.
           </p>
         </FadeIn>
 
