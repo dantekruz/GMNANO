@@ -36,7 +36,7 @@ export default function PipelineChart() {
           <div className="relative mx-auto rounded-3xl overflow-hidden shadow-2xl ring-1 ring-[#1a4a7a]/10 bg-white p-6 md:p-10">
             <div className="relative w-full h-full md:h-72">
               <Image
-                src="/images/pipelinech.png"
+                src="/images/gm-pipeline-chart.png"
                 alt="Current pipeline chart"
                 width={1200}
                 height={800}
